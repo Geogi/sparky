@@ -864,7 +864,7 @@ dependencies = [
 
 [[package]]
 name = "sparky"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "futures",
@@ -872,9 +872,12 @@ dependencies = [
  "serde_json",
  "tokio",
  "twilight-cache-inmemory",
+ "twilight-embed-builder",
  "twilight-gateway",
  "twilight-http",
+ "twilight-mention",
  "twilight-model",
+ "twilight-util",
 ]
 
 [[package]]
@@ -1085,6 +1088,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "twilight-embed-builder"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b932276afa348926de3054a99eba3a134bc938113b1c93a21d01dd706555a95f"
+dependencies = [
+ "twilight-model",
+]
+
+[[package]]
 name = "twilight-gateway"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1148,6 +1160,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "twilight-mention"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2251e11a05c67b6dd801284e631d7dcfb6911aa6ba28223fec968f3f2db3d455"
+dependencies = [
+ "twilight-model",
+]
+
+[[package]]
 name = "twilight-model"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1159,6 +1180,15 @@ dependencies = [
  "serde_repr",
  "time",
  "tracing",
+]
+
+[[package]]
+name = "twilight-util"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1fa52ba3db1add9bb7aa0f25bbc393fc70ac2a8cbfebc5b019ea8ef746f4e4d5"
+dependencies = [
+ "twilight-model",
 ]
 
 [[package]]
